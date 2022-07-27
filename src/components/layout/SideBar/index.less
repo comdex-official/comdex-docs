@@ -1,0 +1,146 @@
+@import "../../../assets/less/_variables.less";
+
+.sidebar-inner {
+	background: @white;
+	width: 100%;
+	max-width: 300px;
+	height: calc(100vh - 60px);
+	padding: 40px 30px;
+	transition: all ease-in-out 0.4s;
+	user-select: none;
+	.social-footer{
+		margin-top: 1.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 60%;
+		a{
+			padding: 0 15px 0 0;
+			.icon{
+				width: 20px;
+				fill: @primary-color;
+			}
+		}
+	}
+	.sidebar-menu {
+		.ant-menu{
+			.ant-menu-item {
+				padding: 0 !important;
+				border-radius: 0;
+				background: none;
+				a {
+					color: @secondary-color;
+					display: flex;
+					align-items: center;
+					.icon {
+						fill: @secondary-color;
+						margin-right: 10px;
+						width: 18px;
+					}
+					&.selected {
+						font-weight: 600;
+						opacity: 1;
+						color: #d93a45;
+					}
+					&:hover{
+						color: #d93a45;
+					}
+				}	
+			}
+			.ant-menu-submenu-title{
+				padding-left: 0 !important;
+				background: none;
+				&:hover{
+					color: #d93a45;
+				}
+				&::selection {
+					background: none;
+				}
+			}
+			.ant-menu-sub{
+				padding-left: 15px;
+			}
+		}
+		.sidebar-icon {
+			width: 20px;
+			height: 20px;
+			margin-right: 8px;
+		}
+	}
+	.sidebar-bottom {
+		border-top: 1px solid @border-color-base;
+		margin-top: 5.5rem;
+		padding-top: 2.5rem;
+		a {
+			display: flex;
+			align-items: center;
+			color: @text-color-primary;
+			margin-bottom: 1.5rem;
+			margin-left: 1rem;
+			font-weight: 600;
+			.icon {
+				width: 24px;
+				fill: @text-color-primary;
+				margin-left: 5px;
+			}
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.cSwap-sider {
+	&.ant-layout-sider-collapsed {
+		min-width: 60px !important;
+		max-width: 60px !important;
+		.sidebar-inner {
+			padding-left: 10px;
+			padding-right: 10px;
+			text-align: center;
+			.ant-menu-item{
+				text-align: center;
+			}
+			.ant-menu-submenu-title{
+				padding: 0 !important;
+				text-align: center;
+				font-size: 0;
+			}
+			.sidebar-menu {
+				li {
+					.ant-menu-title-content{
+						margin: auto;
+					}
+					a {
+						font-size: 0;
+						padding: 0;
+						text-align: center;
+						.icon {
+							margin: auto;
+						}
+					}
+				}
+			}
+			.sidebar-bottom {
+				a {
+					font-size: 9px;
+					margin-left: 0;
+					padding: 0;
+					.icon {
+						width: 18px;
+						margin-left: 2px;
+					}
+				}
+			}
+			.social-footer{
+				display: block;
+				margin: 15px auto 0 auto;
+				a{
+					padding: 8px 0;
+					display: block;
+				}
+			}
+		}
+	}
+}
