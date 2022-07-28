@@ -13,21 +13,33 @@ const data = [
   },
   {
     icon: <SvgIcon name='protocol-icon' viewbox='0 0 36 31.5' /> ,
-    title: 'Mechanism',
-    description: 'cSwap has been built to provide its users with a platform that is safe',
+    title: 'The Comdex Ecosystem',
+    description: 'A B2B application built to tokenize real-world commodity assets',
     url: '/mechanism',
   },
   {
-    icon: <SvgIcon name='faq-icon' viewbox='0 0 30 28.451' /> ,
-    title: 'FAQs',
-    description: 'cSwap aspires to be among the top money markets.',
-    url: '/faq',
+    icon: <SvgIcon name='protocol-icon' viewbox='0 0 36 31.5' /> ,
+    title: 'Asset',
+    description: 'The x/asset modules facilitate creating Apps, Assets, Pairs , ExtendedPairVault.',
+    url: '/asset',
   },
   {
-    icon: <SvgIcon name='voting' viewbox='0 0 30 22.222' /> ,
-    title: 'Voting',
-    description: 'In the cSwap dex, CMDX will be the governance token.',
-    url: '/voting',
+    icon: <SvgIcon name='protocol-icon' viewbox='0 0 36 31.5' /> ,
+    title: 'Auction',
+    description: 'Auction module holds the key functionality for creating /managing auctions across all apps.',
+    url: '/auction',
+  },
+  {
+    icon: <SvgIcon name='protocol-icon' viewbox='0 0 36 31.5' /> ,
+    title: 'Bandoracle',
+    description: 'Bandoracle module fetches the prices of assets.',
+    url: '/bandoracle',
+  },
+  {
+    icon: <SvgIcon name='protocol-icon' viewbox='0 0 36 31.5' /> ,
+    title: 'Collector',
+    description: 'Collector module keeps track of protocol earning via penalty,opening/closing fee etc.',
+    url: '/collector',
   }
 ];
 

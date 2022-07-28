@@ -11,6 +11,7 @@
 		.header-inner{
 			display: flex;
 			align-items: center;
+			justify-content: space-between;
 			max-width: 1440px;
 			width: 100%;
 			margin: auto;
@@ -24,6 +25,21 @@
 						width: 115px;
 						height: 40px;
 					}
+				}
+			}
+			.right-link{
+				display: flex;
+				align-items: center;
+				color: #0c3756;
+				.icon{
+					margin-right: 4px;
+					fill: #0c3756;
+				}
+				&:hover{
+					color: rgba(#0c3756, 0.8);
+					.icon{
+						fill: rgba(#0c3756, 0.8);
+					}		
 				}
 			}
 		}

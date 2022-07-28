@@ -110,7 +110,7 @@ const App = () => {
 									<Route exact path="/main-net" component={JoincomdexMainNet} />
 								</Switch>
 								<Footer className="main-footer">
-									© 2021 cSwap All rights reserved.
+									© 2021 Comdex All rights reserved.
 								</Footer>
 							</Content>
 						</>
