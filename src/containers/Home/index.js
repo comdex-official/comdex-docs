@@ -76,7 +76,7 @@ const Home = () => {
           <Link to={{ pathname: "https://twitter.com/cSwap_Finance" }} target="_blank">
             <div className="card-items">
               <div className="arrow-link"><SvgIcon name='arrow-topright' viewbox='0 0 22.056 22.504' /></div>
-              <SvgIcon name='swap-icon' viewbox='0 0 38.048 41' />
+              <SvgIcon name='comdex-icon' viewbox='0 0 27.385 26.049' />
               <h4>Comdex app</h4>
               <p>link to redirect <br /> traffic to app</p>
             </div>
