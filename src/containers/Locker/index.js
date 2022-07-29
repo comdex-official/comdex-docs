@@ -11,10 +11,10 @@ const Locker = () => {
       </p>
 
       <BottomNav
-        preNavLink="/introduction"
-        prevNavText="Introduction"
-        nextNavLink="/mechanism"
-        nextNavText="Mechanism"
+        preNavLink="/liquidity"
+        prevNavText="Liquidity"
+        nextNavLink="/market"
+        nextNavText="Market"
       />
 
     </div>

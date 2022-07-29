@@ -14,8 +14,8 @@ const BuildIntroduction = () => {
       <BottomNav
         preNavLink="/vault"
         prevNavText="Vault"
-        nextNavLink="/build-introduction"
-        nextNavText="Introduction"
+        nextNavLink="/using-generic-modules"
+        nextNavText="Using generic modules"
       />
 
     </div>
