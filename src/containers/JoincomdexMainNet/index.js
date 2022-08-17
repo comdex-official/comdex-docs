@@ -11,12 +11,12 @@ const JoincomdexMainNet = () => {
         Checkout the documentation to join comdex main network : 
       </p>
       <p>
-        <Link to={{ pathname: 'https://github.com/comdex-official/networks/tree/main/mainnet' }} target="_blank">https://github.com/comdex-official/networks/tree/main/mainnet
-      </Link>
+        Main Net chain ID : comdex-1 <br />
+        Current Test Net Version : v0.1.1
       </p>
       <p>
-        Test Net chain ID : meteor-test <br />
-        Current Test Net Version : v2.1.0
+        <Link to={{ pathname: 'https://github.com/comdex-official/networks/blob/main/mainnet/02-validator-post-gentx.md' }} target="_blank">https://github.com/comdex-official/networks/blob/main/mainnet/02-validator-post-gentx.md
+      </Link>
       </p>
 
       <BottomNav
