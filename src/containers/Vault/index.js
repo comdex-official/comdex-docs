@@ -28,19 +28,24 @@ const Vault = () => {
         Depositors can withdraw their collateral provided it does not put the Vault below the liquidation ratio</p>
 
       <pre>
-        {`message StableMintVault {
- 				 string id 
- string amount_in 
- string amount_out
- uint64 app_id 
- 				 uint64 extended_pair_vault_id }`}
+        {`message Vault {
+  uint64 id 
+  uint64 app_id
+  uint64 extended_pair_vault_id 
+  string owner 
+  string amount_in 
+  string amount_out 
+  google.protobuf.Timestamp created_at 
+  string interest_accumulated 
+  string closing_fee_accumulated 
+}`}
       </pre>
 
       <h3>StableMint</h3>
       <p>A special type of global , ownerless vault for a vault type. The debt issued against the collateral is 1 : 1 in ratio of their dollar value .</p>
       <pre>
         {`message StableMintVault {
- 				string id 
+ 				uint64 id 
  				string amount_in 
  				string amount_out
  				uint64 app_id 
@@ -61,7 +66,7 @@ message VaultToAppMapping {
  
 message ExtendedPairToVaultMapping {
  uint64 extended_pair_id 
- string vault_id 
+ uint64 vault_id 
 }`}
       </pre>
 
@@ -76,11 +81,102 @@ message ExtendedPairToVaultMapping {
 message ExtendedPairVaultMapping
 {
  uint64 extended_pair_id 
- repeated string vault_ids 
+ repeated uint64 vault_ids 
  string token_minted_amount
  string collateral_locked_amount}`}
       </pre>
 
+      <h3>Messages:</h3>
+      <p>
+        Users can create a vault for an app and extended_pair_vault_ id with an initial amount_in (collateral) and amount_out(debt) .
+      </p>
+      <pre>{`message MsgCreateRequest {
+  string from  
+  uint64 app_id   
+  uint64 extended_pair_vault_id 
+  string amount_in 
+  string amount_out 
+}`}</pre>
+
+      <p>Vault owners can deposit extra collateral which inturn increases vault collateralization ratio.</p>
+      <pre>
+        {`message MsgDepositRequest {
+  string from 
+  uint64 app_id  
+  uint64 extended_pair_vault_id 
+  uint64 user_vault_id 
+  string amount 
+}`}
+      </pre>
+
+      <p>Vault owners can withdraw their collateral from the vault.</p>
+      <pre>
+        {`message MsgWithdrawRequest {
+  string from 
+  uint64 app_id  
+  uint64 extended_pair_vault_id 
+  uint64 user_vault_id  
+  string amount 
+}`}
+      </pre>
+      <p>Get more borrowed asset from the vault</p>
+      <pre>
+        {`message MsgDrawRequest {
+  string from 
+  uint64 app_id   
+  uint64 extended_pair_vault_id 
+  uint64 user_vault_id  
+  string amount 
+}`}
+      </pre>
+      <p>Vault owners can repay their debt which will increase the collateralization ratio</p>
+      <pre>
+        {`message MsgRepayRequest {
+  string from 
+  uint64 app_id  
+  uint64 extended_pair_vault_id 
+  uint64 user_vault_id  
+  string amount 
+}`}
+      </pre>
+      <p>Vault owner can close the vault by paying the entire debt</p>
+      <pre>
+        {`message MsgCloseRequest {
+  string from 
+  uint64 app_id   
+  uint64 extended_pair_vault_id 
+  uint64 user_vault_id  
+}`}
+      </pre>
+      <p>Create Stable Mint Vault by depositing a stable token and then minting other stable token</p>
+      <pre>
+        {`message MsgCreateStableMintRequest {
+  string from  
+  uint64 app_id  
+  uint64 extended_pair_vault_id 
+  string amount 
+}`}
+      </pre>
+      <p>Users can deposit the collateral to mint the borrowed asset at 1:1 ratio.</p>
+      <pre>
+        {`message MsgDepositStableMintRequest {
+  string from  
+  uint64 app_id   
+  uint64 extended_pair_vault_id 
+  string amount 
+  uint64 stable_vault_id  
+}`}
+      </pre>
+      <p>Users can withdraw their collateral by burning the borrowed asset at 1:1 ratio.</p>
+      <pre>
+        {`message MsgWithdrawStableMintRequest {
+  string from  
+  uint64 app_id  
+  uint64 extended_pair_vault_id ;
+  string amount 
+  uint64 stable_vault_id  
+}`}
+      </pre>
       <BottomNav
         preNavLink="/tokenmint"
         prevNavText="Tokenmint"

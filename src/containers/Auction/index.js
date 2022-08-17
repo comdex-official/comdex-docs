@@ -16,7 +16,7 @@ const Auction = () => {
          <b>Dutch Auction:</b> Collateral auctions for the liquidated vaults take place via this mechanism.Bidders can bid for partial collateral at a price that keeps varying with auction duration starting with a high price and decreasing linearly.
         </li>
         <li>
-          <b>Surplus Auction</b>(English Auction): Excess surplus of  an asset (collector_asset_id in CollectorLookupTable in Collector module)  is auctioned off for an increasing amount of secondary_asset_id .After the completed auction duration the excess surplus is sent to bidder with highest amount of secondary_asset_id bid.The amount of  secondary_asset_id bid received is the burned via tokenmint module .
+          <b>Surplus Auction</b> Excess surplus of  an asset (collector_asset_id in CollectorLookupTable in Collector module)  is auctioned off for an increasing amount of secondary_asset_id .After the completed auction duration the excess surplus is sent to bidder with highest amount of secondary_asset_id bid.The amount of  secondary_asset_id bid received is the burned via tokenmint module.
         </li>
         <li>
           <b>Debt Auction</b>(Reverse Auction): When protocol runs in debt for an asset_id(collector_asset_id in CollectorLookupTable in Collector module) , the debt auction can be triggered to accumulate collector_asset_id for which bidders bids against decreasing amount of secondary_asset_id.Once auction duration is completed , the bidder with lowest bid for secondary_asset_id wins the bid and protocol mints the bid amount of secondary_asset_id for the winner.
@@ -100,7 +100,7 @@ const Auction = () => {
       </pre>  
 
       <h4>Messages</h4>
-      <h5>Place Surplus Auction Bid</h5>
+      <b>Place Surplus Auction Bid</b>
       <p>Bidders can bid an amount for a surplus auction in terms of the asset that protocol is accepting.</p>
       <pre>
         {`message MsgPlaceSurplusBidRequest {
@@ -112,7 +112,7 @@ const Auction = () => {
 `}
       </pre> 
       
-      <h5>Place Debt Auction Bid</h5>
+      <b>Place Debt Auction Bid</b>
       <p>Bidders can bid an amount for a debt auction in terms of the asset that protocol is accepting.</p>
       <pre>
         {`message MsgPlaceDebtBidRequest {
@@ -124,7 +124,7 @@ const Auction = () => {
    uint64 auction_mapping_id }`}
       </pre> 
 
-      <h5>Place Dutch Auction Bid</h5>
+      <b>Place Dutch Auction Bid</b>
       <p>
         Bidders can bid an amount for a dutch auction in terms of how much collateral they want to buy and the max price that should be greater than current price of collateral.
       </p>

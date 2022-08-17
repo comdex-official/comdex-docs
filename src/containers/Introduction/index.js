@@ -19,7 +19,7 @@ const Introduction = () => {
       <h3>The Chain</h3>
 
       <p>
-        Plug {"&"} play customizable Comdex modules to deliver bleeding edge dApps
+        Plug {"&"} play customizable Comdex modules built on the core tenets of:
       </p>
 
       <p>
