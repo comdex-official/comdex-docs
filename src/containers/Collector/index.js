@@ -8,10 +8,11 @@ const Collector = () => {
       <h2>Collector</h2>
       <h3>Overview</h3>
       <p>
-        Collector module keeps track of protocol earning via penalty,opening/closing fee etc.Collector keeps track of app earning for each individual asset .Protocol can decide to use the excess fund for rewarding locker depositors or participate in surplus auction and can also participate in debt auction if protocol is deficit of funds for an asset and app.
+        Collector module keeps track of protocol earning via penalty,opening/closing fee etc.Collector keeps track of app earning for each individual asset. Protocol can decide to use the excess fund for rewarding locker depositors or participate in surplus auction and can also participate in debt auction if protocol is deficit of funds for an asset and app.
       </p>
-      <p>Track fee collector from various sources app and asset wise</p>
+      
       <h4>State</h4>
+      <p>Track fee collector from various sources app and asset wise</p>
       <pre>
         {`message AppIdToAssetCollectorMapping {
  uint64 app_id 

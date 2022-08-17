@@ -31,6 +31,24 @@ message Market {
 `}
       </pre>
 
+      <h4>Governance</h4>
+      <p>Fetching oracle prices from Band.</p>
+      <pre>
+        {`message MsgFetchPriceData {
+  string creator
+  uint64 oracle_script_id 
+  string source_channel 
+  FetchPriceCallData calldata
+  uint64 ask_count
+  uint64 min_count
+  repeated cosmos.base.v1beta1.Coin fee_limit
+  string request_key
+  uint64 prepare_gas
+  uint64 execute_gas
+  string client_id
+}`}
+      </pre>
+
       <BottomNav
         preNavLink="/auction"
         prevNavText="Auction"

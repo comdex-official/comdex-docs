@@ -55,7 +55,7 @@ const Asset = () => {
       </pre>
 
       <h4>Asset</h4>
-      <p>An asset represents an on-chain representation of a real-world asset.</p>
+      <p>Asset Details</p>
       <pre>
         {`message Asset {
  uint64 id      

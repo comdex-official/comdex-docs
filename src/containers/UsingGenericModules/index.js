@@ -33,12 +33,12 @@ const UsingGenericModules = () => {
       <p>Proposal Msg:</p>
       <p>comdex tx gov submit-proposal add-assets {`<asset_name> <denom> <gov_time_in_sec> <decimal> <is_on_chain> <asset_out_oracle_price>`}</p>
 
-      <h3>Create an Asset pair</h3>
+      <h3>3. Create an Asset pair</h3>
       <p>Asset module can now be leveraged to create an asset pair that can be used by the vault module to create a vault from the pair</p>
       <p>Proposal:</p>
       <p> comdex tx gov submit-proposal add-pairs [asset-in] [asset-out]</p>
 
-      <h3>Map an Asset for App</h3>
+      <h3>4. Map an Asset for App</h3>
       <p>Any dApp that wishes to generate its own token can do so via the tokenmint module . The module can mint several new custom tokens for the dApp out of which at only one asset can be the governance token for the dapp.</p>
       <p>Proposal:</p>
       <p>comdex tx gov submit-proposal add-asset-in-app --add-asset-mapping-file assetmap.json</p>
@@ -90,7 +90,7 @@ const UsingGenericModules = () => {
         </pre>
 
         <h4>2. Initialise collector data</h4>
-        <p>Description: A collector can contains protocol earning. Each collected asset for an app is tracked by collector. The proposal signals to add collector asset i.e the accumulated asset for an app with a secondary asset that takes part in a surplus or debt auction is the app is enables for the same.It also has the locker_saving_rate that distributes rewards to locker depositors for collector asset in the same app on a per-block basis based on the locker_saving_rate defined in the proposal.</p>
+        <p>Description: A collector can contain protocol earning. Each collected asset for an app is tracked by the collector. The proposal signals to add collector asset i.e the accumulated asset for an app with a secondary asset that takes part in a surplus or debt auction is the app is enables for the same.It also has the locker_saving_rate that distributes rewards to locker depositors for collector asset in the same app on a per-block basis based on the locker_saving_rate defined in the proposal.</p>
         <p>Msg Struct:</p>
         <pre>
         {`{"msg_set_collector_lookup_table":{"app_id" :,
@@ -106,7 +106,7 @@ const UsingGenericModules = () => {
 
 
         <h4>3. Whitelist Asset for locker</h4>
-        <p>Description: This proposals signals to set the asset_id eligible for locker functionalities for the given app_id .Locker creation, withdrawal or deposit can then be performed.</p>
+        <p>Description: This proposal signals to set the asset_id eligible for locker functionalities for the given app_id .Locker creation, withdrawal or deposit can then be performed.</p>
         <p>Msg Struct:</p>
         <pre>
           {`{"msg_white_list_asset_locker":{"app_id":,

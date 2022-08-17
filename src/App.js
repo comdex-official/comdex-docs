@@ -60,12 +60,12 @@ const App = () => {
 							>
 								{collapsed ? (
 									<SvgIcon
-										name="chevron-right"
+										name="chevron-left"
 										viewbox="0 0 5.333 9.333"
 									/>
 								) : (
 									<SvgIcon
-										name="chevron-left"
+										name="chevron-right"
 										viewbox="0 0 5.333 9.333"
 									/>
 								)}

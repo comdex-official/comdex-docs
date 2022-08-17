@@ -12,25 +12,25 @@ const data = [
     url: '/Introduction',
   },
   {
-    icon: <SvgIcon name='protocol-icon' viewbox='0 0 36 31.5' /> ,
+    icon: <SvgIcon name="comdex-icon" viewbox="0 0 27.385 26.049" /> ,
     title: 'The Comdex Ecosystem',
     description: 'A B2B application built to tokenize real-world commodity assets',
     url: '/mechanism',
   },
   {
-    icon: <SvgIcon name='protocol-icon' viewbox='0 0 36 31.5' /> ,
+    icon: <SvgIcon name='asset' viewbox='0 0 29.789 29.789' /> ,
     title: 'Asset',
     description: 'The x/asset modules facilitate creating Apps, Assets, Pairs , ExtendedPairVault.',
     url: '/asset',
   },
   {
-    icon: <SvgIcon name='protocol-icon' viewbox='0 0 36 31.5' /> ,
+    icon: <SvgIcon name='auction' viewbox='0 0 28.004 21.797' /> ,
     title: 'Auction',
     description: 'Auction module holds the key functionality for creating /managing auctions across all apps.',
     url: '/auction',
   },
   {
-    icon: <SvgIcon name='protocol-icon' viewbox='0 0 36 31.5' /> ,
+    icon: <SvgIcon name='bandoracle' viewbox='0 0 24.303 24.303' /> ,
     title: 'Bandoracle',
     description: 'Bandoracle module fetches the prices of assets.',
     url: '/bandoracle',
@@ -76,7 +76,7 @@ const Home = () => {
           <Link to={{ pathname: "https://twitter.com/cSwap_Finance" }} target="_blank">
             <div className="card-items">
               <div className="arrow-link"><SvgIcon name='arrow-topright' viewbox='0 0 22.056 22.504' /></div>
-              <SvgIcon name='swap-icon' viewbox='0 0 38.048 41' />
+              <SvgIcon name='comdex-icon' viewbox='0 0 27.385 26.049' />
               <h4>Comdex app</h4>
               <p>link to redirect <br /> traffic to app</p>
             </div>
