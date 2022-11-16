@@ -29,11 +29,10 @@ import Market from "./containers/Market";
 import Rewards from "./containers/Rewards";
 import Tokenmint from "./containers/Tokenmint";
 import Vault from "./containers/Vault";
-import BuildIntroduction from "./containers/BuildIntroduction";
-import UsingGenericModules from "./containers/UsingGenericModules";
 import LocalNodeSetup from "./containers/LocalNodeSetup";
 import JoincomdexTestNet from "./containers/JoincomdexTestNet";
 import JoincomdexMainNet from "./containers/JoincomdexMainNet";
+import BuildDapp from "./containers/BuildDapp";
 
 const { Header, Content, Sider, Footer } = Layout;
 
@@ -103,14 +102,13 @@ const App = () => {
 									<Route exact path="/rewards" component={Rewards} />
 									<Route exact path="/tokenmint" component={Tokenmint} />
 									<Route exact path="/vault" component={Vault} />
-									<Route exact path="/build-introduction" component={BuildIntroduction} />
-									<Route exact path="/using-generic-modules" component={UsingGenericModules} />
+									<Route exact path="/build-dapp" component={BuildDapp} />
 									<Route exact path="/local-node-setup" component={LocalNodeSetup} />
 									<Route exact path="/test-net" component={JoincomdexTestNet} />
 									<Route exact path="/main-net" component={JoincomdexMainNet} />
 								</Switch>
 								<Footer className="main-footer">
-									© 2021 Comdex All rights reserved.
+									© 2022 Comdex All rights reserved.
 								</Footer>
 							</Content>
 						</>

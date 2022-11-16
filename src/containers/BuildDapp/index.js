@@ -2,9 +2,15 @@ import React from "react";
 import { BottomNav } from "../../components/common";
 import "./index.less";
 
-const UsingGenericModules = () => {
+const BuildDapp = () => {
   return (
     <div>
+      <h2>Build dApp on comdex</h2>
+      <h3>Introduction</h3>
+      <p>
+        A CDP based dApp on the Comdex chain can be built in go with a series of below mentioned steps . The generic modules of the Comdex chain enable different dapps to co-exist, having their individual specific functionalities.
+      </p>
+      
       <h2>Using generic modules</h2>
       <p>
         Here are the list of generic modules that all dApps can utilise :
@@ -236,8 +242,8 @@ const UsingGenericModules = () => {
       </div>
 
       <BottomNav
-        preNavLink="/build-introduction"
-        prevNavText="Introduction"
+        preNavLink="/vault"
+        prevNavText="Vault"
         nextNavLink="/local-node-setup"
         nextNavText="Local Node Setup"
       />
@@ -246,4 +252,4 @@ const UsingGenericModules = () => {
   );
 };
 
-export default UsingGenericModules;
+export default BuildDapp;

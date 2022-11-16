@@ -6,40 +6,40 @@ import { SvgIcon } from "../../components/common";
 
 const data = [
   {
-    icon: <SvgIcon name='intro-icon' viewbox='0 0 33.007 36.341' /> ,
+    icon: <SvgIcon name='intro-icon' viewbox='0 0 33.007 36.341' />,
     title: 'Introduction',
     description: 'cSwap is a decentralized, IBC-enabled exchange built on the Comdex chain.',
     url: '/Introduction',
   },
   {
-    icon: <SvgIcon name="comdex-icon" viewbox="0 0 27.385 26.049" /> ,
+    icon: <SvgIcon name="comdex-icon" viewbox="0 0 27.385 26.049" />,
     title: 'The Comdex Ecosystem',
     description: 'A B2B application built to tokenize real-world commodity assets',
-    url: '/mechanism',
+    url: '/comdex-ecosystem',
   },
   {
-    icon: <SvgIcon name='asset' viewbox='0 0 29.789 29.789' /> ,
-    title: 'Asset',
+    icon: <SvgIcon name="modules-icon" viewbox="0 0 26.913 26.588" />,
+    title: 'Modules',
     description: 'The x/asset modules facilitate creating Apps, Assets, Pairs , ExtendedPairVault.',
     url: '/asset',
   },
   {
-    icon: <SvgIcon name='auction' viewbox='0 0 28.004 21.797' /> ,
-    title: 'Auction',
+    icon: <SvgIcon name="build-icon" viewbox="0 0 31.5 36" />,
+    title: 'Build dApp on comdex',
     description: 'Auction module holds the key functionality for creating /managing auctions across all apps.',
-    url: '/auction',
+    url: '/build-introduction',
   },
   {
-    icon: <SvgIcon name='bandoracle' viewbox='0 0 24.303 24.303' /> ,
-    title: 'Bandoracle',
-    description: 'Bandoracle module fetches the prices of assets.',
-    url: '/bandoracle',
+    icon: <SvgIcon name="node" viewbox="0 0 30 33.837" />,
+    title: 'Local Node Setup',
+    description: 'Set up the local net ',
+    url: '/local-node-setup',
   },
   {
-    icon: <SvgIcon name='protocol-icon' viewbox='0 0 36 31.5' /> ,
-    title: 'Collector',
-    description: 'Collector module keeps track of protocol earning via penalty,opening/closing fee etc.',
-    url: '/collector',
+    icon: <SvgIcon name="validator" viewbox="0 0 37.75 27.963" />,
+    title: 'Join Mainnet as a validator',
+    description: 'Checkout the documentation to join comdex main network',
+    url: '/main-net',
   }
 ];
 
@@ -73,11 +73,11 @@ const Home = () => {
           )}
         />
         <div className="bottom-cards">
-          <Link to={{ pathname: "https://twitter.com/cSwap_Finance" }} target="_blank">
+          <Link to={{ pathname: "https://comdex.one/" }} target="_blank">
             <div className="card-items">
               <div className="arrow-link"><SvgIcon name='arrow-topright' viewbox='0 0 22.056 22.504' /></div>
               <SvgIcon name='comdex-icon' viewbox='0 0 27.385 26.049' />
-              <h4>Comdex app</h4>
+              <h4>Comdex Website</h4>
               <p>link to redirect <br /> traffic to app</p>
             </div>
           </Link>
@@ -89,7 +89,7 @@ const Home = () => {
               <p>chat with community <br /> on discord</p>
             </div>
           </Link>
-          <Link to={{ pathname: "/" }}>
+          <Link to={{ pathname: "https://github.com/comdex-official" }} target="_blank">
             <div className="card-items">
               <div className="arrow-link"><SvgIcon name='arrow-topright' viewbox='0 0 22.056 22.504' /></div>
               <SvgIcon name='help-icon' viewbox='0 0 27 31.5' />

@@ -180,7 +180,7 @@ message ExtendedPairVaultMapping
       <BottomNav
         preNavLink="/tokenmint"
         prevNavText="Tokenmint"
-        nextNavLink="/build-introduction"
+        nextNavLink="/build-dapp"
         nextNavText="Build dApp on comdex"
       />
 

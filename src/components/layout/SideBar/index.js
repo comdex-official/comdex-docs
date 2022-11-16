@@ -136,24 +136,14 @@ const SideBar = () => {
                 </NavLink>
               </Menu.Item>
             </Menu.SubMenu>
-            <Menu.SubMenu key="m4" title="Build dApp on comdex" icon={<SvgIcon name="build-icon" viewbox="0 0 31.5 36" />}>
-              <Menu.Item key="m4-1" icon={<SvgIcon name="polygon-icon" viewbox="0 0 16.389 14.75" />}>
-                <NavLink
-                  to="/build-introduction"
-                  className={location.pathname === "/build-introduction" ? "selected" : ""}
-                >
-                  Introduction
-                </NavLink>
-              </Menu.Item>
-              <Menu.Item key="m4-2" icon={<SvgIcon name="polygon-icon" viewbox="0 0 16.389 14.75" />}>
-                <NavLink
-                  to="/using-generic-modules"
-                  className={location.pathname === "/using-generic-modules" ? "selected" : ""}
-                >
-                  Using generic modules
-                </NavLink>
-              </Menu.Item>
-            </Menu.SubMenu>
+            <Menu.Item key="m4" icon={<SvgIcon name="build-icon" viewbox="0 0 31.5 36" />}>
+              <NavLink
+                to="/build-dapp"
+                className={location.pathname === "/build-dapp" ? "selected" : ""}
+              >
+                Build dApp on comdex
+              </NavLink>
+            </Menu.Item>
             <Menu.Item key="m5" icon={<SvgIcon name="node" viewbox="0 0 30 33.837" />}>
               <NavLink
                 to="/local-node-setup"
@@ -186,13 +176,13 @@ const SideBar = () => {
             <Link to={{ pathname: "https://t.me/ComdexChat" }} target="_blank">
               <SvgIcon name="telegram" viewbox="0 0 24.635 20.66" />
             </Link>
-            <Link to={{ pathname: "https://discord.com/invite/7vjPvWKKMT" }}>
+            <Link to={{ pathname: "https://discord.com/invite/ypUb5Gyh7Z" }} target="_blank">
               <SvgIcon name="discord" viewbox="0 0 29.539 22.155" />
             </Link>
-            <Link to={{ pathname: "https://comdexofficial.medium.com/" }}>
+            <Link to={{ pathname: "https://blog.comdex.one/" }} target="_blank">
               <SvgIcon name="medium" viewbox="0 0 30.849 24.41" />
             </Link>
-            <Link to={{ pathname: "https://forum.comdex.one/" }}>
+            <Link to={{ pathname: "https://forum.comdex.one/" }} target="_blank">
               <SvgIcon name="foruem" viewbox="0 0 27.205 27.205" />
             </Link>
           </div>

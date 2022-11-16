@@ -15,8 +15,8 @@ const LocalNodeSetup = () => {
       </Link>
 
       <BottomNav
-        preNavLink="/using-generic-modules"
-        prevNavText="Using Generic Modules"
+        preNavLink="/build-dapp"
+        prevNavText="Build dApp on comdex"
         nextNavLink="/test-net"
         nextNavText="Join comdex Test Net as a validator"
       />
