@@ -15,7 +15,7 @@ const JoincomdexTestNet = () => {
       <p>Checkout the documentation to join comdex test network : </p>
       <p>
         Test Net chain ID : meteor-test<br />
-        Current Test Net Version : v4.3.0
+        Current Test Net Version : v5.0.0.beta
       </p>
 
       <p>Follow the below documentation :</p>
