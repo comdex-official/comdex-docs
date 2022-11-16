@@ -140,8 +140,8 @@ const Auction = () => {
 
 
       <BottomNav
-        preNavLink="/auction"
-        prevNavText="Auction"
+        preNavLink="/asset"
+        prevNavText="Asset"
         nextNavLink="/bandoracle"
         nextNavText="Bandoracle"
       />
