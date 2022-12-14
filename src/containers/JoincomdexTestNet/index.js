@@ -10,18 +10,18 @@ const JoincomdexTestNet = () => {
       <p>
         We recommend you setting up the cosmovisor, follow the steps below :
       </p>
-      <Link to={{ pathname: 'https://github.com/comdex-official/networks/blob/main/testnet/cosmovisor-setup.md' }} target="_blank">https://github.com/comdex-official/networks/blob/main/testnet/cosmovisor-setup.md
+      <Link to={{ pathname: 'https://github.com/comdex-official/networks/tree/main/testnet/testnet-2/README.md' }} target="_blank">https://github.com/comdex-official/networks/tree/main/testnet/testnet-2/README.md
       </Link>
       <p>Checkout the documentation to join comdex test network : </p>
       <p>
-        Test Net chain ID : meteor-test<br />
-        Current Test Net Version : v5.0.0.beta
+        Test Net chain ID : comdex-test2<br />
+        Current Test Net Version : v6.0.0.beta
       </p>
 
       <p>Follow the below documentation :</p>
 
-      <Link to={{ pathname: 'https://github.com/comdex-official/networks/tree/main/testnet/meteor-test' }} target="_blank">
-        https://github.com/comdex-official/networks/tree/main/testnet/meteor-test
+      <Link to={{ pathname: 'https://github.com/comdex-official/networks/tree/main/testnet/testnet-2' }} target="_blank">
+        https://github.com/comdex-official/networks/tree/main/testnet/testnet-2/README.md
       </Link>
 
       <BottomNav
