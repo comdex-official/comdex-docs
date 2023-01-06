@@ -15,7 +15,7 @@ const JoincomdexTestNet = () => {
       <p>Checkout the documentation to join comdex test network : </p>
       <p>
         Test Net chain ID : comdex-test2<br />
-        Current Test Net Version : v6.0.0.beta
+        Current Test Net Version : v7.0.0
       </p>
 
       <p>Follow the below documentation :</p>
