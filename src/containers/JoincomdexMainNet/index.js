@@ -22,6 +22,8 @@ const JoincomdexMainNet = () => {
       <BottomNav
         preNavLink="/test-net"
         prevNavText="Join comdex Test Net as a validator"
+        nextNavLink="/foundation-delegation"
+        nextNavText="Comdex Foundation Delegation"
       />
 
     </div>

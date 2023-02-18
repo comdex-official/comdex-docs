@@ -17,8 +17,8 @@ const LocalNodeSetup = () => {
       <BottomNav
         preNavLink="/build-dapp"
         prevNavText="Build dApp on comdex"
-        nextNavLink="/test-net"
-        nextNavText="Join comdex Test Net as a validator"
+        nextNavLink="/ibc-mainnet"
+        nextNavText="Mainnet IBC channels for comdex-1"
       />
 
     </div>

@@ -34,6 +34,11 @@ import LocalNodeSetup from "./containers/LocalNodeSetup";
 import JoincomdexTestNet from "./containers/JoincomdexTestNet";
 import JoincomdexMainNet from "./containers/JoincomdexMainNet";
 import BuildDapp from "./containers/BuildDapp";
+import Mainnet from "./containers/Mainnet";
+import Testnet from "./containers/Testnet";
+import IbcRelayers from "./containers/IbcRelayers";
+import ChainEndpoints from "./containers/ChainEndpoints";
+import FoundationDelegation from "./containers/FoundationDelegation";
 
 const { Header, Content, Sider, Footer } = Layout;
 
@@ -108,6 +113,11 @@ const App = () => {
 										<Route exact path="/local-node-setup" component={LocalNodeSetup} />
 										<Route exact path="/test-net" component={JoincomdexTestNet} />
 										<Route exact path="/main-net" component={JoincomdexMainNet} />
+										<Route exact path="/ibc-mainnet" component={Mainnet} />
+										<Route exact path="/ibc-testnet" component={Testnet} />
+										<Route exact path="/ibc-relayers" component={IbcRelayers} />
+										<Route exact path="/chain-endpoints" component={ChainEndpoints} />
+										<Route exact path="/foundation-delegation" component={FoundationDelegation} />
 									</Switch>
 								</ScrollToTop>
 								<Footer className="main-footer">
