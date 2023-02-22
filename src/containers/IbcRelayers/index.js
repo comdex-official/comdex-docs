@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
 import { Table } from "antd";
+import React from "react";
 import { Link } from "react-router-dom";
 import { BottomNav, Copy, SvgIcon } from "../../components/common";
-import axios from "axios";
+import { ibcRelayers } from "./data";
 import "./index.less";
 
 const truncateString = (string, front, back) => {
@@ -84,36 +84,17 @@ const columns = [
 ];
 
 const IbcRelayers = () => {
-  const [loading, setLoading] = useState(true);
-  const [data, setData] = useState(null);
-  useEffect(() => {
-    let pathValue = window.location;
-    axios
-      .get(pathValue.origin + '/data.json')
-      .then(res => {
-        setData(res.data);
-        console.log(data)
-      })
-      .catch(error => console.log(error));
-  }, [(data == null)]);
-
-  useEffect(() => {
-    setLoading(false);
-  }, [data]);
   return (
     <div>
       <h2 className="mb-1">IBC Relayers</h2>
-      <h4>Huge shout-out to our reliable IBC-Relayer operators!</h4>
-      <h4>
-        We encourage everyone to follow and support our IBC-relayer operators
-      </h4>
+      <h4>A big thank you to our reliable IBC partners. We invite everyone to support and follow our IBC relayers.</h4>
       <p>
         Note: <span className="text-muted">Raise a PR on</span>{" "}
         <Link to={{ pathname: "https://github.com/comdex-official/comdex-docs/pulls" }} target="_blank">Github</Link>
       </p>
-      {(!loading && (data !== null)) &&
+      {((ibcRelayers !== null)) &&
         <Table
-          dataSource={data}
+          dataSource={ibcRelayers}
           columns={columns}
           bordered
           pagination={false}

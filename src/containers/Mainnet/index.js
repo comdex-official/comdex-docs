@@ -2,6 +2,7 @@ import { Table } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
 import { BottomNav } from "../../components/common";
+import { mainnetIbcChannels } from "./data";
 import "./index.less";
 
 const columns = [
@@ -33,65 +34,6 @@ const columns = [
   },
 ];
 
-const dataSource = [
-  {
-    key: '1',
-    source_channel: 'channel-51',
-    destination_chain: 'Axelar',
-    destination_chainid: 'axelar-dojo-1',
-    destination_channel: 'channel-42',
-    known_operators: 'AUDIT.one, Cros-nest, Polkachu *looking for more operators*'
-  },
-  {
-    key: '2',
-    source_channel: 'channel-35',
-    destination_chain: 'Comdex',
-    destination_chainid: 'comdex-1',
-    destination_channel: 'channel-10',
-    known_operators: 'Architect Nodes, Cros-nest *looking for more operators*'
-  },
-  {
-    key: '3',
-    source_channel: 'channel-24',
-    destination_chain: 'Cosmos Hub',
-    destination_chainid: 'cosmoshub-4',
-    destination_channel: 'channel-190',
-    known_operators: 'AUDIT.one ⚡, Architect Nodes ⚡️, Cros-nest ⚡️, CryptoCrew ⚡, DSRV, Stakin'
-  },
-  {
-    key: '4',
-    source_channel: 'channel-68',
-    destination_chain: 'Crescent',
-    destination_chainid: 'crescent-1',
-    destination_channel: 'channel-30',
-    known_operators: 'Simply Staking *looking for more operators*'
-  },
-  {
-    key: '5',
-    source_channel: 'channel-38',
-    destination_chain: 'Gravity Bridge',
-    destination_chainid: 'gravity-bridge-3',
-    destination_channel: 'channel-24',
-    known_operators: 'AUDIT.one, bitszn, Cosmonaut Stakes, CryptoCrew, Stakin'
-  },
-  {
-    key: '6',
-    source_channel: 'channel-68',
-    destination_chain: 'Crescent',
-    destination_chainid: 'crescent-1',
-    destination_channel: 'channel-30',
-    known_operators: 'Simply Staking *looking for more operators*'
-  },
-  {
-    key: '7',
-    source_channel: 'channel-38',
-    destination_chain: 'Gravity Bridge',
-    destination_chainid: 'gravity-bridge-3',
-    destination_channel: 'channel-24',
-    known_operators: 'AUDIT.one, bitszn, Cosmonaut Stakes, CryptoCrew, Stakin'
-  },
-];
-
 const Mainnet = () => {
   return (
     <div>
@@ -101,7 +43,7 @@ const Mainnet = () => {
         Note: <span className="text-muted">Raise a PR on</span> <Link to={{ pathname: "https://github.com/comdex-official/comdex-docs/pulls" }} target="_blank">Github</Link>
       </p>
       
-      <Table dataSource={dataSource} columns={columns} bordered pagination={false} scroll={{ y: 'calc(100vh - 480px)' }} />
+      <Table dataSource={mainnetIbcChannels} columns={columns} bordered pagination={false} scroll={{ y: 'calc(100vh - 480px)' }} />
 
       <BottomNav
         preNavLink="/local-node-setup"
