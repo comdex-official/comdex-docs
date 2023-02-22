@@ -204,7 +204,7 @@ const SideBar = () => {
                 Join comdex Main Net as a validator
               </NavLink>
             </Menu.Item>
-            <Menu.Item key="m9" icon={<SvgIcon name="delegation" viewbox="0 0 10 10" />}>
+            <Menu.Item key="m10" icon={<SvgIcon name="delegation" viewbox="0 0 10 10" />}>
               <NavLink
                 to="/foundation-delegation"
                 className={location.pathname === "/foundation-delegation" ? "selected" : ""}

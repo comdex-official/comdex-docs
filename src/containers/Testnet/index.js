@@ -50,7 +50,7 @@ const Testnet = () => {
       <h2 className="mb-1">IBC Channels</h2>
       <h3>Testnet IBC Testnet for comdex-test2</h3>
       <p>
-        <b>Note:</b> <span className="text-muted">Raise a PR on</span> <Link to={{ pathname: "https://github.com" }} target="_blank">Github</Link>
+        <b>Note:</b> <span className="text-muted">Raise a PR on</span> <Link to={{ pathname: "https://github.com/comdex-official/comdex-docs/pulls" }} target="_blank">Github</Link>
       </p>
       
       <Table dataSource={dataSource} columns={columns} bordered pagination={false} scroll={{ y: 'calc(100vh - 480px)' }} />

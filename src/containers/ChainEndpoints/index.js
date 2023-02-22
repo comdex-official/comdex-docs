@@ -49,7 +49,7 @@ const ChainEndpoints = () => {
       <h2 className="mb-1">Comdex Chain Endpoints</h2>
       <h4>Please mention your RPC/REST endpoints for comdex products.</h4>
       <p>
-        <b>Note:</b> <span className="text-muted">Raise a PR on</span> <Link to={{ pathname: "https://github.com" }} target="_blank">Github</Link>
+        <b>Note:</b> <span className="text-muted">Raise a PR on</span> <Link to={{ pathname: "https://github.com/comdex-official/comdex-docs/pulls" }} target="_blank">Github</Link>
       </p>
       
       <Table dataSource={dataSource} columns={columns} bordered pagination={false} scroll={{ y: 'calc(100vh - 480px)' }} />

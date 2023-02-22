@@ -59,6 +59,9 @@ const dataSource2 = [
 const FoundationDelegation = () => {
   return (
     <div>
+      <div className="border-box">
+        To receive foundation delegations, it is required to apply through this form before 28/02/2023 - 23:59UTC
+      </div>
       <h2 className="mb-1">Comdex Foundation Delegation</h2>
       <p>The below requirement to be met in order to be eligible for any delegation</p>
       <h4>Requirements</h4>

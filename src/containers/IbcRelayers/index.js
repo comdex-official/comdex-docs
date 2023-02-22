@@ -1,8 +1,18 @@
+import React, { useState, useEffect } from "react";
 import { Table } from "antd";
-import React from "react";
 import { Link } from "react-router-dom";
-import { BottomNav, SvgIcon } from "../../components/common";
+import { BottomNav, Copy, SvgIcon } from "../../components/common";
+import axios from "axios";
 import "./index.less";
+
+const truncateString = (string, front, back) => {
+  if (typeof string === "string") {
+    return `${string?.substr(0, front)}...${string?.substr(
+      string?.length - back,
+      string?.length
+    )}`;
+  }
+};
 
 const columns = [
   {
@@ -16,17 +26,50 @@ const columns = [
     dataIndex: "contact",
     key: "contact",
     width: 240,
+    render: (_, record) => (
+      <div className="table-contact">
+        {record.email &&
+          <div className="contact-row">
+            <div className="icon email-icon">
+              <SvgIcon name="email" viewbox="0 0 13 8" />
+            </div>
+            {record.email}
+          </div>
+        }
+        {record.telegram &&
+          <div className="contact-row">
+            <div className="icon telegram-icon">
+              <SvgIcon name="telegram" viewbox="0 0 24.635 20.66" />
+            </div>
+            {record.telegram}
+          </div>
+        }
+        {record.twitter &&
+          <div className="contact-row">
+            <div className="icon twitter-icon">
+              <SvgIcon name="twitter" viewbox="0 0 25.617 20.825" />
+            </div>
+            {record.twitter}
+          </div>
+        }
+      </div>
+    ),
   },
   {
     title: "Support",
     dataIndex: "support",
     key: "support",
-    width: 230,
+    width: 200,
   },
   {
     title: "Comdex Address",
     dataIndex: "comdex_address",
     key: "comdex_address",
+    width: 170,
+    render: (_, record) => <div className="wallet-adress-col">
+      <span className="mr-3"> {truncateString(record.comdex_address, 6, 6)} </span>
+      <Copy text={record.comdex_address} />
+    </div>
   },
   {
     title: "Destination Chain Address",
@@ -40,77 +83,23 @@ const columns = [
   },
 ];
 
-const dataSource = [
-  {
-    key: "1",
-    relayer: "AUDIT.One",
-    contact: (
-      <div className="table-contact">
-        <div className="contact-row">
-          <div className="icon email-icon">
-            {" "}
-            <SvgIcon name="email" viewbox="0 0 13 8" />{" "}
-          </div>{" "}
-          hello@audit.one
-        </div>
-        <div className="contact-row">
-          <div className="icon telegram-icon">
-            {" "}
-            <SvgIcon name="telegram" viewbox="0 0 24.635 20.66" />{" "}
-          </div>{" "}
-          @AuditOne
-        </div>
-        <div className="contact-row">
-          <div className="icon twitter-icon">
-            {" "}
-            <SvgIcon name="twitter" viewbox="0 0 25.617 20.825" />{" "}
-          </div>{" "}
-          @AuditOne_
-        </div>
-      </div>
-    ),
-    support: "🔒 Delegate to AUDIT.One on CosmosHub, Osmosis, Juno",
-    comdex_address: "",
-    destination_chain_address: "",
-    validator_name: "",
-  },
-  {
-    key: "2",
-    relayer: "Cephalopod Equipment Corp",
-    contact: (
-      <div className="table-contact">
-        <div className="contact-row">
-          <div className="icon email-icon">
-            {" "}
-            <SvgIcon name="email" viewbox="0 0 13 8" />{" "}
-          </div>{" "}
-          validator@informal.systems
-        </div>
-        <div className="contact-row">
-          <div className="icon telegram-icon">
-            {" "}
-            <SvgIcon name="telegram" viewbox="0 0 24.635 20.66" />{" "}
-          </div>{" "}
-          Telegram @JD_Lorax
-        </div>
-        <div className="contact-row">
-          <div className="icon twitter-icon">
-            {" "}
-            <SvgIcon name="twitter" viewbox="0 0 25.617 20.825" />{" "}
-          </div>{" "}
-          Twitter @CephalopodEquip
-        </div>
-      </div>
-    ),
-    support:
-      "🔒 Delegate to Cephalopod Equipment Corp on: Osmosis, Cosmos Hub, Regen, Ixo, Juno, Cheqd, Akash, Agoric",
-    comdex_address: "",
-    destination_chain_address: "",
-    validator_name: "",
-  },
-];
-
 const IbcRelayers = () => {
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    let pathValue = window.location;
+    axios
+      .get(pathValue.origin + '/data.json')
+      .then(res => {
+        setData(res.data);
+        console.log(data)
+      })
+      .catch(error => console.log(error));
+  }, [(data == null)]);
+
+  useEffect(() => {
+    setLoading(false);
+  }, [data]);
   return (
     <div>
       <h2 className="mb-1">IBC Relayers</h2>
@@ -120,19 +109,17 @@ const IbcRelayers = () => {
       </h4>
       <p>
         Note: <span className="text-muted">Raise a PR on</span>{" "}
-        <Link to={{ pathname: "https://github.com" }} target="_blank">
-          Github
-        </Link>
+        <Link to={{ pathname: "https://github.com/comdex-official/comdex-docs/pulls" }} target="_blank">Github</Link>
       </p>
-
-      <Table
-        dataSource={dataSource}
-        columns={columns}
-        bordered
-        pagination={false}
-        scroll={{ y: "calc(100vh - 480px)" }}
-      />
-
+      {(!loading && (data !== null)) &&
+        <Table
+          dataSource={data}
+          columns={columns}
+          bordered
+          pagination={false}
+          scroll={{ y: "calc(100vh - 480px)", x: "100%" }}
+        />
+      }
       <BottomNav
         preNavLink="/ibc-testnet"
         prevNavText="Testnet IBC Testnet for comdex-test2"
