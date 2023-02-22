@@ -40,7 +40,7 @@ const Mainnet = () => {
       <h2 className="mb-1">IBC Channels</h2>
       <h3>Mainnet IBC channels for comdex-1</h3>
       <p>
-        Note: <span className="text-muted">Raise a PR on</span> <Link to={{ pathname: "https://github.com/comdex-official/comdex-docs/pulls" }} target="_blank">Github</Link>
+        Note: <span className="text-muted">Raise a PR on</span> <Link to={{ pathname: "https://github.com/comdex-official/comdex-docs/blob/relayers-pages/src/docs/README.md" }} target="_blank">Github</Link>
       </p>
       
       <Table dataSource={mainnetIbcChannels} columns={columns} bordered pagination={false} scroll={{ y: 'calc(100vh - 480px)' }} />

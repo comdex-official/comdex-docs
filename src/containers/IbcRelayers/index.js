@@ -117,7 +117,7 @@ const IbcRelayers = () => {
         Note: <span className="text-muted">Raise a PR on</span>{" "}
         <Link
           to={{
-            pathname: "https://github.com/comdex-official/comdex-docs/pulls",
+            pathname: "https://github.com/comdex-official/comdex-docs/blob/relayers-pages/src/docs/README.md",
           }}
           target="_blank"
         >
