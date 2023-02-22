@@ -50,7 +50,7 @@ const Testnet = () => {
   return (
     <div>
       <h2 className="mb-1">IBC Channels</h2>
-      <h3>Testnet IBC Testnet for comdex-test2</h3>
+      <h3>Testnet IBC channels for comdex-test2</h3>
       <p>
         <b>Note:</b> <span className="text-muted">Raise a PR on</span>{" "}
         <Link

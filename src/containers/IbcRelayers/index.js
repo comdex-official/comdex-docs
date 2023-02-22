@@ -135,7 +135,7 @@ const IbcRelayers = () => {
       )}
       <BottomNav
         preNavLink="/ibc-testnet"
-        prevNavText="Testnet IBC Testnet for comdex-test2"
+        prevNavText="Testnet IBC channels for comdex-test2"
         nextNavLink="/chain-endpoints"
         nextNavText="Comdex Chain Endpoints"
       />

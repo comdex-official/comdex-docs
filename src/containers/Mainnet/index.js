@@ -49,7 +49,7 @@ const Mainnet = () => {
         preNavLink="/local-node-setup"
         prevNavText="Local Node Setup"
         nextNavLink="/ibc-testnet"
-        nextNavText="Testnet IBC Testnet for comdex-test2"
+        nextNavText="Testnet IBC channels for comdex-test2"
       />
 
     </div>
