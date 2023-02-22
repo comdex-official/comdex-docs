@@ -1,4 +1,4 @@
-# Steps to raise PRs for adding records
+# Steps to raise PRs for adding new records
 
  - For adding new record in 'Mainnet IBC channels for comdex-1' add the channel details in src/containers/Mainnet/data.js and [raise a PR](https://github.com/comdex-official/comdex-docs/compare) to main branch.
 
