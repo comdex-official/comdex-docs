@@ -6,7 +6,7 @@ export const ibcRelayers = [
     telegram: "@AuditOne",
     twitter: "@AuditOne_",
     support: "🔒 Delegate to AUDIT.One on CosmosHub, Osmosis, Juno",
-    comdex_address: "comdex00052098kKKS00025222Dssx",
+    comdex_address: "comdex1nnjy6nct405pzfaqjm3dsyw0pf0kyw72k94wd0",
     destination_chain_address: "",
     validator_name: "",
   },

@@ -28,30 +28,30 @@ const columns = [
     width: 240,
     render: (_, record) => (
       <div className="table-contact">
-        {record.email &&
+        {record.email && (
           <div className="contact-row">
             <div className="icon email-icon">
               <SvgIcon name="email" viewbox="0 0 13 8" />
             </div>
             {record.email}
           </div>
-        }
-        {record.telegram &&
+        )}
+        {record.telegram && (
           <div className="contact-row">
             <div className="icon telegram-icon">
               <SvgIcon name="telegram" viewbox="0 0 24.635 20.66" />
             </div>
             {record.telegram}
           </div>
-        }
-        {record.twitter &&
+        )}
+        {record.twitter && (
           <div className="contact-row">
             <div className="icon twitter-icon">
               <SvgIcon name="twitter" viewbox="0 0 25.617 20.825" />
             </div>
             {record.twitter}
           </div>
-        }
+        )}
       </div>
     ),
   },
@@ -66,15 +66,37 @@ const columns = [
     dataIndex: "comdex_address",
     key: "comdex_address",
     width: 170,
-    render: (_, record) => <div className="wallet-adress-col">
-      <span className="mr-3"> {truncateString(record.comdex_address, 6, 6)} </span>
-      <Copy text={record.comdex_address} />
-    </div>
+    render: (_, record) => (
+      <div className="wallet-adress-col">
+        {record.comdex_address ? (
+          <>
+            <span className="mr-3">
+              {" "}
+              {truncateString(record.comdex_address, 6, 6)}{" "}
+            </span>
+            <Copy text={record.comdex_address} />
+          </>
+        ) : null}
+      </div>
+    ),
   },
   {
     title: "Destination Chain Address",
     dataIndex: "destination_chain_address",
     key: "destination_chain_address",
+    render: (_, record) => (
+      <div className="wallet-adress-col">
+        {record.destination_chain_address ? (
+          <>
+            <span className="mr-3">
+              {" "}
+              {truncateString(record.destination_chain_address, 6, 6)}{" "}
+            </span>
+            <Copy text={record.destination_chain_address} />
+          </>
+        ) : null}
+      </div>
+    ),
   },
   {
     title: "Validator Name",
@@ -87,12 +109,22 @@ const IbcRelayers = () => {
   return (
     <div>
       <h2 className="mb-1">IBC Relayers</h2>
-      <h4>A big thank you to our reliable IBC partners. We invite everyone to support and follow our IBC relayers.</h4>
+      <h4>
+        A big thank you to our reliable IBC partners. We invite everyone to
+        support and follow our IBC relayers.
+      </h4>
       <p>
         Note: <span className="text-muted">Raise a PR on</span>{" "}
-        <Link to={{ pathname: "https://github.com/comdex-official/comdex-docs/pulls" }} target="_blank">Github</Link>
+        <Link
+          to={{
+            pathname: "https://github.com/comdex-official/comdex-docs/pulls",
+          }}
+          target="_blank"
+        >
+          Github
+        </Link>
       </p>
-      {((ibcRelayers !== null)) &&
+      {ibcRelayers !== null && (
         <Table
           dataSource={ibcRelayers}
           columns={columns}
@@ -100,7 +132,7 @@ const IbcRelayers = () => {
           pagination={false}
           scroll={{ y: "calc(100vh - 480px)", x: "100%" }}
         />
-      }
+      )}
       <BottomNav
         preNavLink="/ibc-testnet"
         prevNavText="Testnet IBC Testnet for comdex-test2"
