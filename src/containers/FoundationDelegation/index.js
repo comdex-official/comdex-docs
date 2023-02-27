@@ -65,7 +65,7 @@ const FoundationDelegation = () => {
         <Link
           to={{
             pathname:
-              "https://docs.google.com/forms/d/1ysxM7lZgNOjYDou1MmVI2G2Pc2FrDY6Pl74kNKhggyg/edit?edit_requested=true",
+              "https://docs.google.com/forms/d/1LMCz1M8aY5td8OIl5p5k2NQpKKsHB_BJZA5q77vasK4/edit",
           }}
           target="_blank"
         >
@@ -75,28 +75,26 @@ const FoundationDelegation = () => {
       </div>
       <h2 className="mb-1">Comdex Foundation Delegation</h2>
       <p>
-        The below requirement to be met in order to be eligible for any
-        delegation
+        Validators will be evaluated based on the below requirements as well as their Mainnet and Testnet and any other contributions towards the Comdex community. The requirements are as follow :
       </p>
       <h4>Requirements</h4>
 
       <div className="grey-box">
         <ul>
-          <li>Been in the active set all times </li>
+          <li>Commission: Between 1-10%</li>
           <li>
-            <b>Voting Power ≤2.5%</b>
+            Remove voting power criteria
           </li>
-          <li>Commission: ≤5% </li>
+          <li>Remove Self-Stake criteria : ≥10,000 CMDX</li>
           <li>
-            <b>Self-Stake: ≥10,000 CMDX</b>
+            Uptime (average from 1st Nov-1st March 23 ): ≥95% at all times
           </li>
-          <li>Uptime (30day average): ≥95% at all times </li>
-          <li>Governance Participation (starting from Proposal #60)*: ≥80%</li>
+          <li>Governance Participation (starting from Proposal #60): ≥80%</li>
         </ul>
       </div>
 
       <p>
-        From 01/11/2022 onwards, all validators will be evaluated continuously
+        <b>FROM</b> 15th March 2023 onwards, all validators will be evaluated continuously
         against the above criteria. When submitting your application, please
         ensure that everything is in place to meet the above criteria.
       </p>
