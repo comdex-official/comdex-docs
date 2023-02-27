@@ -102,9 +102,7 @@ const FoundationDelegation = () => {
       <h3>Addition delegations</h3>
 
       <p>
-        Delegations will be made not only if one meets the minimum criteria but
-        also based on value and uniqueness of the contribution which have been
-        mentioned below.
+        Delegations will also be made based on the value and uniqueness of the contribution which have been mentioned below.
       </p>
 
       <Row className="pt-3">
