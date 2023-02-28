@@ -69,43 +69,34 @@ const FoundationDelegation = () => {
           }}
           target="_blank"
         >
-          form
+          FORM
         </Link>{" "}
-        before 28/02/2023 - 23:59UTC
+        before 15/03/2023 - 23:59UTC
       </div>
       <h2 className="mb-1">Comdex Foundation Delegation</h2>
       <p>
-        Validators will be evaluated based on the below requirements as well as their Mainnet and Testnet and any other contributions towards the Comdex community. The requirements are as follow :
+        Validators will be evaluated based on the below requirements as well as
+        their Mainnet and Testnet and any other contributions towards the Comdex
+        community. The requirements are as follow :
       </p>
       <h4>Requirements</h4>
-
       <div className="grey-box">
         <ul>
+          <li>Been in the active set all times </li>
           <li>Commission: Between 1-10%</li>
-          <li>
-            Remove voting power criteria
-          </li>
-          <li>Remove Self-Stake criteria : ≥10,000 CMDX</li>
           <li>
             Uptime (average from 1st Nov-1st March 23 ): ≥95% at all times
           </li>
-          <li>Governance Participation (starting from Proposal #60): ≥80%</li>
+          <li>Governance Participation (starting from Proposal #60)*: ≥80%</li>
         </ul>
       </div>
 
-      <p>
-        <b>FROM</b> 15th March 2023 onwards, all validators will be evaluated continuously
-        against the above criteria. When submitting your application, please
-        ensure that everything is in place to meet the above criteria.
+      <p className="pt-1">
+        Delegations will also be made based on the value and uniqueness of the
+        contribution which have been mentioned below.
       </p>
 
-      <h3>Addition delegations</h3>
-
-      <p>
-        Delegations will also be made based on the value and uniqueness of the contribution which have been mentioned below.
-      </p>
-
-      <Row className="pt-3">
+      <Row>
         <Col md="6" className="mb-4">
           <h3>Mainnet Contribution</h3>
           <Table
