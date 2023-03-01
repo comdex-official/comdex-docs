@@ -10,16 +10,4 @@ export const ibcRelayers = [
     destination_chain_address: "",
     validator_name: "",
   },
-  {
-    key: "2",
-    relayer: "AUDIT.One",
-    email: "validator@informal.systems",
-    telegram: "Telegram @JD_Lorax",
-    twitter: "Twitter @CephalopodEquip",
-    support:
-      "🔒 Delegate to Cephalopod Equipment Corp on: Osmosis, Cosmos Hub, Regen, Ixo, Juno, Cheqd, Akash, Agoric",
-    comdex_address: "comdex00052098kKKS00025222Dssx",
-    destination_chain_address: "",
-    validator_name: "",
-  },
 ];
