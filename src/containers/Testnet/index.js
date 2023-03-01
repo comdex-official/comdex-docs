@@ -68,7 +68,7 @@ const Testnet = () => {
         columns={columns}
         bordered
         pagination={false}
-        scroll={{ y: "calc(100vh - 480px)" }}
+        scroll={{ y: 400, x: 800 }}
       />
 
       <BottomNav

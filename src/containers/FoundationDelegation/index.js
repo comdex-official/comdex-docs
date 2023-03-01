@@ -104,7 +104,7 @@ const FoundationDelegation = () => {
             columns={columns}
             bordered
             pagination={false}
-            scroll={{ y: "200px" }}
+            scroll={{ y: 400, x: 400 }}
           />
         </Col>
         <Col md="6">
@@ -114,7 +114,7 @@ const FoundationDelegation = () => {
             columns={columns2}
             bordered
             pagination={false}
-            scroll={{ y: 200 }}
+            scroll={{ y: 400, x: 400 }}
           />
         </Col>
       </Row>

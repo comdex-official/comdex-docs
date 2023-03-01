@@ -84,6 +84,7 @@ const columns = [
     title: "Destination Chain Address",
     dataIndex: "destination_chain_address",
     key: "destination_chain_address",
+    width: 120,
     render: (_, record) => (
       <div className="wallet-adress-col">
         {record.destination_chain_address ? (
@@ -102,6 +103,7 @@ const columns = [
     title: "Validator Name",
     dataIndex: "validator_name",
     key: "validator_name",
+    width: 120,
   },
 ];
 
@@ -130,7 +132,7 @@ const IbcRelayers = () => {
           columns={columns}
           bordered
           pagination={false}
-          scroll={{ y: "calc(100vh - 480px)", x: "100%" }}
+          scroll={{ y: 400, x: 800 }}
         />
       )}
       <BottomNav
