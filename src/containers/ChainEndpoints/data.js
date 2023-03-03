@@ -2,8 +2,8 @@ export const chainEndPoints = [
   {
     key: "1",
     chain_name: "Cosmos",
-    rpc: "https://cosmos-rpc.comdex.one/cosmos",
-    rest: "https://cosmos-rest.comdex.one/cosmos",
-    name_of_validator: "",
+    rpc: "https://cosmos-rpc.zenscape.one",
+    rest: "https://cosmos-rest.zenscape.one",
+    name_of_validator: "Zenscape",
   },
 ];

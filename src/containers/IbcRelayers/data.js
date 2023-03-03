@@ -1,13 +1,13 @@
 export const ibcRelayers = [
   {
     key: "1",
-    relayer: "AUDIT.One",
-    email: "hello@audit.one",
-    telegram: "@AuditOne",
-    twitter: "@AuditOne_",
-    support: "🔒 Delegate to AUDIT.One on CosmosHub, Osmosis, Juno",
-    comdex_address: "comdex1nnjy6nct405pzfaqjm3dsyw0pf0kyw72k94wd0",
-    destination_chain_address: "",
-    validator_name: "",
+    relayer: "Zenscape",
+    email: "contact@zenscape.one",
+    telegram: "@zenscape",
+    twitter: "@ZenscapeOne",
+    support: "🔒 Delegate to Zenscape on Osmosis, Persistence, Asset-mantle, Canto, Ki-chain, Arable and Chihuahua.",
+    comdex_address: "comdex14ta2wtae9kjdcx2xu2tmhnrx2v2rasjqjft8uz",
+    destination_addresses: ["osmo1jl37fuv4pdu5hcjvqrhpj8ctt47yehzgc6dm8w", "canto1sjceeu7m83qazzgualxvuwha8cweagkd7ny79f"],
+    validator_name: "Zenscape",
   },
 ];

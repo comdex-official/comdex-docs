@@ -25,7 +25,7 @@ const columns = [
     title: "Contact",
     dataIndex: "contact",
     key: "contact",
-    width: 240,
+    width: 200,
     render: (_, record) => (
       <div className="table-contact">
         {record.email && (
@@ -65,7 +65,7 @@ const columns = [
     title: "Comdex Address",
     dataIndex: "comdex_address",
     key: "comdex_address",
-    width: 170,
+    width: 140,
     render: (_, record) => (
       <div className="wallet-adress-col">
         {record.comdex_address ? (
@@ -81,29 +81,23 @@ const columns = [
     ),
   },
   {
-    title: "Destination Chain Address",
-    dataIndex: "destination_chain_address",
-    key: "destination_chain_address",
-    width: 120,
-    render: (_, record) => (
-      <div className="wallet-adress-col">
-        {record.destination_chain_address ? (
-          <>
-            <span className="mr-3">
-              {" "}
-              {truncateString(record.destination_chain_address, 6, 6)}{" "}
-            </span>
-            <Copy text={record.destination_chain_address} />
-          </>
-        ) : null}
-      </div>
-    ),
+    title: "Destination Addresses",
+    dataIndex: "destination_addresses",
+    key: "destination_addresses",
+    width: 170,
+    render: (_, record) =>
+      record?.destination_addresses?.map((address) => (
+        <div className="wallet-adress-col">
+          <span className="mr-2"> {truncateString(address, 6, 6)} </span>
+          <Copy text={address} />
+        </div>
+      )),
   },
   {
     title: "Validator Name",
     dataIndex: "validator_name",
     key: "validator_name",
-    width: 120,
+    width: 130,
   },
 ];
 
@@ -119,7 +113,8 @@ const IbcRelayers = () => {
         Note: <span className="text-muted">Raise a PR on</span>{" "}
         <Link
           to={{
-            pathname: "https://github.com/comdex-official/comdex-docs/blob/relayers-pages/src/docs/README.md",
+            pathname:
+              "https://github.com/comdex-official/comdex-docs/blob/relayers-pages/src/docs/README.md",
           }}
           target="_blank"
         >
