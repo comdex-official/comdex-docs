@@ -18,8 +18,8 @@ const columns = [
   },
   {
     title: "Name of the Validator",
-    dataIndex: "nameof_validator",
-    key: "nameof_validator",
+    dataIndex: "name_of_validator",
+    key: "name_of_validator",
   },
 ];
 
@@ -29,10 +29,10 @@ const dataSource = chainEndPoints.map((item) => {
     chain_name: item?.chain_name,
     endpoints: (
       <>
-        {item?.rpc} <br /> {item?.rpc}
+        {item?.rpc} <br /> {item?.rest}
       </>
     ),
-    nameof_validator: item?.nameof_validator,
+    name_of_validator: item?.name_of_validator,
   };
 });
 
