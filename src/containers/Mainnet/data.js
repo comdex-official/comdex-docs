@@ -14,7 +14,7 @@ export const mainnetIbcChannels = [
     destination_chain: "Band",
     destination_chainid: "laozi-mainnet",
     destination_channel: "channel-96",
-    known_operators: "Zenscape, CryptoCrew",
+    known_operators: "CryptoCrew, Architect Nodes, Zenscape",
   },
   {
     key: "3",
@@ -86,7 +86,7 @@ export const mainnetIbcChannels = [
     destination_chain: "Evmos",
     destination_chainid: "evmos_9001-2",
     destination_channel: "channel-26",
-    known_operators: "Architect Nodes",
+    known_operators: "Mandragora, Architect Nodes",
   },
   {
     key: "12",
@@ -110,7 +110,7 @@ export const mainnetIbcChannels = [
     destination_chain: "Stride",
     destination_chainid: "stride-1",
     destination_channel: "channel-49",
-    known_operators: "Cros Nest, Zenscape, Architect Nodes",
+    known_operators: "Cros Nest, Architect Nodes, Mandragora, Zenscape",
   },
   {
     key: "15",
