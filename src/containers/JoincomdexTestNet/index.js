@@ -25,8 +25,8 @@ const JoincomdexTestNet = () => {
       </Link>
 
       <BottomNav
-        preNavLink="/local-node-setup"
-        prevNavText="Join comdex Test Net as a validator"
+        preNavLink="/chain-endpoints"
+        prevNavText="Comdex Chain Endpoints"
         nextNavLink="/main-net"
         nextNavText="Join comdex Main Net as a validator"
       />

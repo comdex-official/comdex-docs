@@ -152,7 +152,43 @@ const SideBar = () => {
                 Local Node Setup
               </NavLink>
             </Menu.Item>
-            <Menu.Item key="m6" icon={<SvgIcon name="validator" viewbox="0 0 37.75 27.963" />}>
+            <Menu.SubMenu key="m6" title="Relayers" icon={<SvgIcon name="relayers" viewbox="0 0 12 10" />}>
+              <Menu.SubMenu key="m6-1" title="IBC Channels" icon={<SvgIcon name="polygon-icon" viewbox="0 0 16.389 14.75" />}>
+                <Menu.Item key="m6-1-1" icon={<SvgIcon name="polygon-icon" viewbox="0 0 16.389 14.75" />}>
+                  <NavLink
+                    to="/ibc-mainnet"
+                    className={location.pathname === "/ibc-mainnet" ? "selected" : ""}
+                  >
+                    Mainnet
+                  </NavLink>
+                </Menu.Item>
+                <Menu.Item key="m6-1-2" icon={<SvgIcon name="polygon-icon" viewbox="0 0 16.389 14.75" />}>
+                  <NavLink
+                    to="/ibc-testnet"
+                    className={location.pathname === "/ibc-testnet" ? "selected" : ""}
+                  >
+                    Testnet
+                  </NavLink>
+                </Menu.Item>
+              </Menu.SubMenu>
+              <Menu.Item key="m6-2" icon={<SvgIcon name="polygon-icon" viewbox="0 0 16.389 14.75" />}>
+                <NavLink
+                  to="/ibc-relayers"
+                  className={location.pathname === "/ibc-relayers" ? "selected" : ""}
+                >
+                  IBC Relayers
+                </NavLink>
+              </Menu.Item>
+            </Menu.SubMenu>
+            <Menu.Item key="m7" icon={<SvgIcon name="endpoint" viewbox="0 0 10 10" />}>
+              <NavLink
+                to="/chain-endpoints"
+                className={location.pathname === "/chain-endpoints" ? "selected" : ""}
+              >
+                Comdex Chain Endpoints
+              </NavLink>
+            </Menu.Item>
+            <Menu.Item key="m8" icon={<SvgIcon name="validator" viewbox="0 0 37.75 27.963" />}>
               <NavLink
                 to="/test-net"
                 className={location.pathname === "/test-net" ? "selected" : ""}
@@ -160,12 +196,20 @@ const SideBar = () => {
                 Join comdex Test Net as a validator
               </NavLink>
             </Menu.Item>
-            <Menu.Item key="m7" icon={<SvgIcon name="validator" viewbox="0 0 37.75 27.963" />}>
+            <Menu.Item key="m9" icon={<SvgIcon name="validator" viewbox="0 0 37.75 27.963" />}>
               <NavLink
                 to="/main-net"
                 className={location.pathname === "/main-net" ? "selected" : ""}
               >
                 Join comdex Main Net as a validator
+              </NavLink>
+            </Menu.Item>
+            <Menu.Item key="m10" icon={<SvgIcon name="delegation" viewbox="0 0 10 10" />}>
+              <NavLink
+                to="/foundation-delegation"
+                className={location.pathname === "/foundation-delegation" ? "selected" : ""}
+              >
+                Comdex Foundation Delegation
               </NavLink>
             </Menu.Item>
           </Menu>

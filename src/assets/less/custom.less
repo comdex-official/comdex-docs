@@ -148,9 +148,34 @@ pre{
 	}
 }
 
+.ant-table {
+	.ant-table-thead{
+		th {
+			padding: 10px 15px;
+			color: #5B6975;
+			font-weight: 600;
+			background: #F4F7F9;
+		}
+	}
+	.ant-table-tbody{
+		tr {
+			td{
+				padding: 10px 15px;
+			}
+			&:nth-child(odd) {
+				background: #F4F7F9;
+			}
+			&:nth-child(even) {
+				background: @white;
+			}
+		}
+	}
+}
+
 
 ::-webkit-scrollbar {
     width: 6px;
+	height: 7px;
 }
 
 ::-webkit-scrollbar-track {
