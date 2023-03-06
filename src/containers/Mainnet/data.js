@@ -37,7 +37,7 @@ export const mainnetIbcChannels = [
     source_channel: "channel-18",
     destination_chain: "Juno",
     destination_chainid: "juno-1",
-    destination_channel: "channel-86",
+    destination_channel: "channel-36",
     known_operators: "Cros-nest, CryptoCrew, EZStaking.io Relayer, ChainTools, Polkachu",
   },
   {
