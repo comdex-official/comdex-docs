@@ -6,7 +6,7 @@ export const mainnetIbcChannels = [
     destination_chainid: "osmosis-1",
     destination_channel: "channel-87",
     known_operators:
-      "Cros-nest, Mandragora, CryptoCrew, AutoStake, Lavender.Five Nodes, Tedcrypto.io, Golden Ratio Staking, Zenscape",
+      "Cros-nest, Mandragora, CryptoCrew, AutoStake, Lavender.Five Nodes, Tedcrypto.io, Golden Ratio Staking, Zenscape, Polkachu",
   },
   {
     key: "2",
@@ -22,7 +22,7 @@ export const mainnetIbcChannels = [
     destination_chain: "Cosmos",
     destination_chainid: "cosmoshub-4",
     destination_channel: "channel-400",
-    known_operators: "CryptoCrew, Mandragora, Zenscape, ChainTools, Cros-nest",
+    known_operators: "CryptoCrew, Mandragora, Zenscape, ChainTools, Cros-nest, Polkachu",
   },
   {
     key: "4",
@@ -30,7 +30,7 @@ export const mainnetIbcChannels = [
     destination_chain: "Axelar",
     destination_chainid: "axelar-dojo-1",
     destination_channel: "channel-37",
-    known_operators: "Zenscape, Mandragora, Cros-nest",
+    known_operators: "Zenscape, Mandragora, Cros-nest, Polkachu",
   },
   {
     key: "5",
@@ -38,7 +38,7 @@ export const mainnetIbcChannels = [
     destination_chain: "Juno",
     destination_chainid: "juno-1",
     destination_channel: "channel-86",
-    known_operators: "Cros-nest, CryptoCrew, EZStaking.io Relayer, ChainTools",
+    known_operators: "Cros-nest, CryptoCrew, EZStaking.io Relayer, ChainTools, Polkachu",
   },
   {
     key: "6",
@@ -46,7 +46,7 @@ export const mainnetIbcChannels = [
     destination_chain: "Kujira",
     destination_chainid: "kaiyo-1",
     destination_channel: "channel-18",
-    known_operators: "Zenscape, CryptoCrew, ChainTools",
+    known_operators: "Zenscape, CryptoCrew, ChainTools, Cross-nest, Polkachu",
   },
   {
     key: "7",
@@ -62,7 +62,7 @@ export const mainnetIbcChannels = [
     destination_chain: "Gravity Bridge",
     destination_chainid: "gravity-bridge-3",
     destination_channel: "channel-21",
-    known_operators: "CryptoCrew, Zenscape",
+    known_operators: "CryptoCrew, Cros-nest, Zenscape, Polkachu",
   },
   {
     key: "9",
@@ -70,7 +70,7 @@ export const mainnetIbcChannels = [
     destination_chain: "Persistence",
     destination_chainid: "core-1",
     destination_channel: "channel-71",
-    known_operators: "Architect Nodes, Paranormal Bros",
+    known_operators: "Architect Nodes, Paranormal Bros, Cros-nest, Polkachu",
   },
   {
     key: "10",
@@ -78,7 +78,7 @@ export const mainnetIbcChannels = [
     destination_chain: "Akash",
     destination_chainid: "akash-1",
     destination_channel: "channel-55",
-    known_operators: "Zenscape",
+    known_operators: "Polkachu, Zenscape",
   },
   {
     key: "11",
@@ -86,7 +86,7 @@ export const mainnetIbcChannels = [
     destination_chain: "Evmos",
     destination_chainid: "evmos_9001-2",
     destination_channel: "channel-26",
-    known_operators: "Mandragora, Architect Nodes",
+    known_operators: "Mandragora, Architect Nodes, Polkachu",
   },
   {
     key: "12",
@@ -110,7 +110,7 @@ export const mainnetIbcChannels = [
     destination_chain: "Stride",
     destination_chainid: "stride-1",
     destination_channel: "channel-49",
-    known_operators: "Cros Nest, Architect Nodes, Mandragora, Zenscape",
+    known_operators: "Cros-nest, Architect Nodes, Mandragora, Zenscape",
   },
   {
     key: "15",
@@ -118,7 +118,7 @@ export const mainnetIbcChannels = [
     destination_chain: "Asset mantle",
     destination_chainid: "mantle-1",
     destination_channel: "channel-17",
-    known_operators: "Cros Nest",
+    known_operators: "Cros-nest",
   },
   {
     key: "16",
@@ -126,6 +126,14 @@ export const mainnetIbcChannels = [
     destination_chain: "Canto",
     destination_chainid: "canto_7700-1",
     destination_channel: "channel-7",
-    known_operators: "Zenscape",
+    known_operators: "Zenscape, Cros-nest",
+  },
+  {
+    key: "17",
+    source_channel: "channel-61",
+    destination_chain: "chihuahua",
+    destination_chainid: "chihuahua-1",
+    destination_channel: "channel-37",
+    known_operators: "Cros-nest, Stakelab, Polkachu",
   },
 ];
