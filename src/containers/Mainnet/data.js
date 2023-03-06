@@ -46,7 +46,7 @@ export const mainnetIbcChannels = [
     destination_chain: "Kujira",
     destination_chainid: "kaiyo-1",
     destination_channel: "channel-18",
-    known_operators: "Zenscape, CryptoCrew, ChainTools, Cross-nest, Polkachu",
+    known_operators: "Zenscape, CryptoCrew, ChainTools, Cros-nest, Polkachu",
   },
   {
     key: "7",
