@@ -94,7 +94,7 @@ export const mainnetIbcChannels = [
     destination_chain: "Luna",
     destination_chainid: "phoenix-1",
     destination_channel: "channel-39",
-    known_operators: "Zenscape",
+    known_operators: "Cros-nest, Zenscape",
   },
   {
     key: "13",
