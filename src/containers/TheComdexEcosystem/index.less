@@ -1,6 +1,27 @@
 .ecosystem-list{
     padding-left: 15px;
+    list-style-type: none;
     li{
-        padding: 5px 0;
+        padding: 8px 0;
+        display: flex;
+
+        b {
+            font-size: 18px;
+            font-weight: 700;
+            min-width: 170px;
+            padding-left: 10px;
+            position: relative;
+            &::before {
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                border-radius: 6px;
+                background: #5F5F5F;
+                display: inline-block;
+                content: ' ';
+                left: -8px;
+                top: 12px;
+            }
+        }
     }
 }
