@@ -12,7 +12,7 @@ const JoincomdexMainNet = () => {
       </p>
       <p>
         Main Net chain ID : comdex-1 <br />
-        Current Main Net Version : Mainnet-v9.0.0
+        Current Main Net Version : v11.5.0
       </p>
       <p>
         <Link to={{ pathname: 'https://github.com/comdex-official/networks/blob/main/mainnet/02-validator-post-gentx.md' }} target="_blank">https://github.com/comdex-official/networks/blob/main/mainnet/02-validator-post-gentx.md
